@@ -1,0 +1,129 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px; /*work around to eliminate breaking of inline-box on 33%, not optimal*/
+  width: 100%;
+
+}
+
+.extra-small{
+  height: 75px;
+}
+
+.small {
+  height: 150px;
+}
+
+.medium {
+  height: 300px;
+}
+
+.large {
+  height: 600px;
+}
+
+.padding-small {
+  padding: 15px;
+}
+
+.padding-medium {
+  padding: 30px;
+}
+
+.padding-large {
+  padding: 45px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+}
+
+.footer {
+  background-color: lightgray;
+}
+
+.list {
+  display: inline-block;
+  padding: 15px;
+}
+
+@media screen and (min-width: 700px){
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .col-2 {
+    width: 91.66%;
+  }
+
+  .col-3 {
+    width: 83.33%;
+  }
+
+  .col-4 {
+    width: 75%;
+  }
+
+  .col-5 {
+    width: 66.66%;
+  }
+
+  .col-6 {
+    width: 58%;
+  }
+
+  .col-7 {
+    width: 50%;
+  }
+
+  .col-8 {
+    width: 41%;
+  }
+
+  .col-9 {
+    width: 33.33%;
+  }
+
+  .col-10 {
+    width: 25%;
+  }
+
+  .col-11 {
+    width: 16.66%;
+  }
+
+  .col-12 {
+    width:  8.33%;
+  }
+  
+}
