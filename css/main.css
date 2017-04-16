@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 .responsive-image {
   max-width: 100%;
   height: auto;
@@ -13,6 +17,12 @@
 .row {
   clear: both;
   width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
@@ -55,10 +65,12 @@
 
 .right {
   float: right;
+  
 }
 
 .left {
   float: left;
+  
 }
 
 .center {
@@ -76,18 +88,34 @@
   padding: 15px;
 }
 
-@media screen and (min-width: 700px){
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.table td {
+  border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 650px){
 
   .col-1 {
     width: 100%;
   }
 
   .col-2 {
-    width: 91.66%;
+    width: 91%;
   }
 
   .col-3 {
-    width: 83.33%;
+    width: 83%;
   }
 
   .col-4 {
@@ -95,7 +123,7 @@
   }
 
   .col-5 {
-    width: 66.66%;
+    width: 66%;
   }
 
   .col-6 {
@@ -111,7 +139,7 @@
   }
 
   .col-9 {
-    width: 33.33%;
+    width: 33%;
   }
 
   .col-10 {
@@ -119,11 +147,14 @@
   }
 
   .col-11 {
-    width: 16.66%;
+    width: 16%;
   }
 
   .col-12 {
-    width:  8.33%;
+    width:  8%;
   }
   
+  .table td {
+    padding: 10px;
+  }
 }
